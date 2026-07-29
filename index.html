@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V系 - Visual Kei Archives</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <h1>V系</h1>
+    <p>VISUAL KEI ARCHIVE & CATALOG</p>
+    
+    <div class="search-container">
+      <input type="text" id="searchInput" class="search-input" placeholder="バンド名やキーワードで検索...">
+    </div>
+  </header>
+
+  <!-- メインリスト -->
+  <container>
+    <div class="band-grid" id="bandGrid"></div>
+  </container>
+
+  <!-- 詳細表示用モーダル -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <div class="modal-kana" id="modalKana"></div>
+      <span class="band-genre" id="modalGenre"></span>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="tags" id="modalTags"></div>
+    </div>
+  </div>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; V系 Visual Kei Archive. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
